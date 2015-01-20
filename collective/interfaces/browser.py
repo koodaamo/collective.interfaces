@@ -36,6 +36,7 @@ class InterfacesView(BrowserView):
             if add:
                 iface = getInterface(self.context, add)
                 alsoProvides(self.context, iface)
+                self.context.reindexObject(idxs=["object_provides"])
                 plone_utils.addPortalMessage(_('Interface ${name} added.', mapping={'name':add}))
             else:
                 plone_utils.addPortalMessage(_('Please select an interface.'))
@@ -46,10 +47,11 @@ class InterfacesView(BrowserView):
                 for iface in ifaces:
                     noLongerProvides(self.context, getInterface(self.context, iface))
             
+                self.context.reindexObject(idxs=["object_provides"])
                 plone_utils.addPortalMessage(_('${count} interface(s) removed.', mapping={'count':len(ifaces)}))
             else:
                 plone_utils.addPortalMessage(_('Please select an interface.'))
-        
+
         return self._template()
 
     def availableInterfaces(self):
