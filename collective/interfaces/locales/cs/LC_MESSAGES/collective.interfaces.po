@@ -11,8 +11,9 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin2\n"
 "Language-Team: \n"
 
+#. Default: "${count} interface(s) removed."
 #: ./browser.py:49
-msgid "${count} interface(s) removed."
+msgid "interfaces_removed_msg"
 msgstr "${count} interfaců odstraněno."
 
 #. Default: "Info"
@@ -20,8 +21,9 @@ msgstr "${count} interfaců odstraněno."
 msgid "Info"
 msgstr "Info"
 
+#. Default: "Interface ${name} added."
 #: ./browser.py:39
-msgid "Interface ${name} added."
+msgid "interface_added_msg"
 msgstr "Interface ${name} přidán."
 
 #. Default: "Interfaces"

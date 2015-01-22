@@ -17,8 +17,9 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.interfaces\n"
 
+#. Default: "${count} interface(s) removed."
 #: ./browser.py:49
-msgid "${count} interface(s) removed."
+msgid "interfaces_removed_msg"
 msgstr ""
 
 #. Default: "Info"
@@ -26,8 +27,9 @@ msgstr ""
 msgid "Info"
 msgstr ""
 
+#. Default: "Interface ${name} added."
 #: ./browser.py:39
-msgid "Interface ${name} added."
+msgid "interface_added_msg"
 msgstr ""
 
 #. Default: "Interfaces"
