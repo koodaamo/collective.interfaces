@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.1.2 (2015-01-22)
+-------------------
+
+- fixed wrong message factory domain
+- improved translations
+- now updates catalog (reindex object_provides) after marker addition/removal
+- moved source to Plone github collective
+
 1.1 (2010-10-25)
 -------------------
 
