@@ -6,8 +6,8 @@ version = '1.1.2'
 setup(name='collective.interfaces',
       version=version,
       description="Adds interfaces tab to Plone's content where Manager's can manage marker interfaces.",
-      long_description=open(os.path.join("collective", "interfaces", "README.txt")).read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description=open(os.path.join("collective", "interfaces", "README.rst")).read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.rst")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
