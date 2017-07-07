@@ -1,6 +1,5 @@
 from Acquisition import aq_base
 from Products.Five import BrowserView
-from Products.CMFPlone.InterfaceTool import getDottedName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.Five.utilities.interfaces import IMarkerInterfaces
 from Products.CMFCore.utils import getToolByName
@@ -10,6 +9,13 @@ from zope.interface import (providedBy, directlyProvidedBy, alsoProvides,
 from zope.component.interface import getInterface
 
 from collective.interfaces import _
+
+from plone import api
+if api.env.plone_version() < "5.0":
+   from Products.CMFPlone.InterfaceTool import getDottedName
+else:
+   from plone.app.layout.globals.interface import getDottedName
+
 
 def formatInfo(ifaces):
     result = []
