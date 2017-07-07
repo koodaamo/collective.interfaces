@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.1.3 (unreleased)
+-------------------
+
+- conditional getDottedName import for supporting both P4 & P5
+
 1.1.2 (2015-01-22)
 -------------------
 
